@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Author: Nodir Muhammedov -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Client feedback and quality control registry for Spirito Royal Barbershop in Astana. Share impressions of your recent visit.">
+    <meta name="author" content="Nodir Muhammedov">
+    <title>Customer Feedback — Spirito Royal</title>
+</head>
+<body>
+    <header>
+        <h1>Spirito Royal Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services &amp; Pricing</a></li>
+                <li><a href="booking.html">Online Booking</a></li>
+                <li><a href="barbers.html">Barbers &amp; Branches</a></li>
+                <li><a href="feedback.html">Customer Feedback</a></li>
+                <li><a href="marketbar.html">MarketBar &amp; Care</a></li>
+                <li><a href="careers.html">Careers &amp; Academy</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Client Quality Assurance Portal</h2>
+            <p>
+                Direct feedback from our guests drives the continuous evolution of our customer hospitality protocols. We review every submitted assessment regarding haircut execution, workstation sterility, and interpersonal courtesy. If your recent visit surpassed expectations or identified areas requiring administrative correction, please submit an entry through our quality assurance registry below.
+            </p>
+            <p>
+                Executive management directly analyzes reviews falling beneath our premier benchmark. Your evaluation guides staff coaching programs, influences bonus distribution for senior masters, and refines the complementary services offered across all Astana establishments.
+            </p>
+
+            <!-- 
+                ASSIGNMENT COMMENT:
+                This feedback interface operates purely client-side without sending payload data
+                over HTTP networks because backend API endpoints are scheduled for future modules.
+            -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Guest Identification</legend>
+                    <p>
+                        <label for="fb-name">Full Name:</label><br>
+                        <input type="text" id="fb-name" name="fb_name" placeholder="Yerlan Kassymov" required>
+                    </p>
+                    <p>
+                        <label for="fb-tel">Contact Telephone:</label><br>
+                        <input type="tel" id="fb-tel" name="fb_tel" placeholder="+7 (702) 123-45-67" required>
+                    </p>
+                    <p>
+                        <label for="fb-email">Email Address:</label><br>
+                        <input type="email" id="fb-email" name="fb_email" placeholder="yerlan@example.kz" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service Assessment Parameters</legend>
+                    <p>
+                        <label for="fb-branch">Branch Visited:</label><br>
+                        <select id="fb-branch" name="fb_branch" required>
+                            <option value="">-- Choose Branch Location --</option>
+                            <option value="kabanbay">58A Kabanbay Batyr Ave</option>
+                            <option value="kaysenov">6 Kasyma Kaysenova St</option>
+                            <option value="ulydala">58 Uly Dala Ave</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="fb-date">Date of Visit:</label><br>
+                        <input type="date" id="fb-date" name="fb_date" required>
+                    </p>
+                    <p>
+                        <label for="fb-rating">Overall Score (Scale 1 to 5):</label><br>
+                        <input type="number" id="fb-rating" name="fb_rating" min="1" max="5" value="5" required>
+                    </p>
+
+                    <p>Would you recommend Spirito Royal to colleagues?</p>
+                    <p>
+                        <input type="radio" id="rec-yes" name="recommend" value="yes" checked>
+                        <label for="rec-yes">Definitely Recommend</label><br>
+                        <input type="radio" id="rec-maybe" name="recommend" value="maybe">
+                        <label for="rec-maybe">Undecided</label><br>
+                        <input type="radio" id="rec-no" name="recommend" value="no">
+                        <label for="rec-no">Would Not Recommend</label>
+                    </p>
+
+                    <p>
+                        <label for="fb-text">Detailed Observations:</label><br>
+                        <textarea id="fb-text" name="fb_text" rows="5" cols="45" placeholder="Elaborate on master technique, punctuality, or ambience..." required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="fb-agree" name="fb_agree" required>
+                        <label for="fb-agree">I authorize internal review of this testimonial by quality supervisors</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Evaluation</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quality Control Division: <a href="mailto:care@spirito.kz">care@spirito.kz</a></p>
+        <p>&copy; 2026 Spirito Royal. Guest feedback register &bull; Certified review system.</p>
+    </footer>
+</body>
+</html>
