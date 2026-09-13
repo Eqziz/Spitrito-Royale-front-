@@ -3,7 +3,7 @@
 * **Organization**: Spirito Royal (Barbershop & MarketBar, Astana)[cite: 1]
 * **Team Members**:
   * Student 1 (Lead): Nodir Muhammedov (`services.html`, `booking.html`, `feedback.html`)[cite: 1]
-  * Student 2: Yerulan Baimbet (`barbers.html`, `booking.html`, `careers.html`)[cite: 1]
+  * Student 2: Nurken Mamay (`barbers.html`, `booking.html`, `careers.html`)[cite: 1]
   * Student 3: Nurassyl Ilyas (`marketbar.html`, `colophon.html`)[cite: 1]
 
 ---
