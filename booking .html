@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Author: Nurken Mamay -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online appointment reservation form for Spirito Royal Barbershop in Astana. Select branch, master rank, and convenient time slot.">
+    <meta name="author" content="Nurken Mamay">
+    <title>Online Booking — Spirito Royal</title>
+</head>
+<body>
+    <header>
+        <h1>Spirito Royal Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services &amp; Pricing</a></li>
+                <li><a href="booking.html">Online Booking</a></li>
+                <li><a href="barbers.html">Barbers &amp; Branches</a></li>
+                <li><a href="feedback.html">Customer Feedback</a></li>
+                <li><a href="marketbar.html">MarketBar &amp; Care</a></li>
+                <li><a href="careers.html">Careers &amp; Academy</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Reserve Your Grooming Appointment</h2>
+            <p>
+                Booking an appointment in advance guarantees dedicated chair time without delays. As our senior floor manager frequently reminds guests: <q>Punctuality is the supreme expression of mutual respect in modern business culture</q>. We invite you to complete the structured form below to schedule a session at any of our three Astana branches.
+            </p>
+            <p>
+                We kindly recommend arriving approximately 10 minutes prior to your allocated slot. Our complimentary espresso crafted with purified H<sub>2</sub>O and caffeine C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> will prepare you for a restorative grooming break during a demanding workday.
+            </p>
+
+            <!-- 
+                ASSIGNMENT COMMENT:
+                This reservation form does not dispatch data to a backend server yet because server-side
+                processing architectures have not been introduced at this stage of the curriculum.
+            -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Client Contact Details</legend>
+                    <p>
+                        <label for="client-name">Full Name:</label><br>
+                        <input type="text" id="client-name" name="client_name" placeholder="e.g. Alisher Nurgaliyev" required>
+                    </p>
+                    <p>
+                        <label for="client-tel">Phone Number:</label><br>
+                        <input type="tel" id="client-tel" name="client_tel" placeholder="+7 (701) 000-00-00" required>
+                    </p>
+                    <p>
+                        <label for="client-email">Email Address:</label><br>
+                        <input type="email" id="client-email" name="client_email" placeholder="alisher@example.kz" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Appointment Specifications</legend>
+                    <p>
+                        <label for="branch-select">Select Capital Branch:</label><br>
+                        <select id="branch-select" name="branch" required>
+                            <option value="">-- Choose Location --</option>
+                            <option value="kabanbay">58A Kabanbay Batyr Ave (Expo Boulevard)</option>
+                            <option value="kaysenov">6 Kasyma Kaysenova St (ARNAU)</option>
+                            <option value="ulydala">58 Uly Dala Ave (Expo Plaza)</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="booking-date">Requested Date:</label><br>
+                        <input type="date" id="booking-date" name="booking_date" required>
+                    </p>
+                    <p>
+                        <label for="guests-count">Number of Guests (1 to 4):</label><br>
+                        <input type="number" id="guests-count" name="guests_count" min="1" max="4" value="1" required>
+                    </p>
+
+                    <p>Preferred Specialist Rank:</p>
+                    <p>
+                        <input type="radio" id="rank-barber" name="master_rank" value="barber" checked>
+                        <label for="rank-barber">Certified Barber</label><br>
+                        <input type="radio" id="rank-top" name="master_rank" value="top_barber">
+                        <label for="rank-top">Top Barber (+20% rate)</label><br>
+                        <input type="radio" id="rank-brand" name="master_rank" value="brand_barber">
+                        <label for="rank-brand">Executive Brand Master</label>
+                    </p>
+
+                    <p>
+                        <label for="comments">Specific Style Instructions:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="45" placeholder="Specify fade height, beard shape, or beverage preferences..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="policy-agree" name="policy_agree" required>
+                        <label for="policy-agree">I agree with house attendance policies and personal data processing</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Confirm Reservation</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Receptionist Direct: <a href="tel:+77008691010">+7 (700) 869-10-10</a></p>
+        <p>&copy; 2026 Spirito Royal &amp; Company. All rights reserved &trade;.</p>
+    </footer>
+</body>
+</html>

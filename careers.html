@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Author: Nurken Mamay -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Career opportunities and barber academy registration at Spirito Royal Barbershop in Astana. Candidate application form.">
+    <meta name="author" content="Nurken Mamay">
+    <title>Careers &amp; Academy — Spirito Royal</title>
+</head>
+<body>
+    <header>
+        <h1>Spirito Royal Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services &amp; Pricing</a></li>
+                <li><a href="booking.html">Online Booking</a></li>
+                <li><a href="barbers.html">Barbers &amp; Branches</a></li>
+                <li><a href="feedback.html">Customer Feedback</a></li>
+                <li><a href="marketbar.html">MarketBar &amp; Care</a></li>
+                <li><a href="careers.html">Careers &amp; Academy</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Join Our Team and Academy</h2>
+            <p>
+                Due to the steady expansion of our network in Astana, Spirito Royal consistently seeks dedicated professionals eager to refine their skills in an environment of excellence. We offer transparent career paths spanning junior apprenticeships to senior brand directorships and coaching positions within our academy. Our specialists benefit from premium Japanese ergonomics, continuous customer acquisition pipelines, and timely remuneration structures.
+            </p>
+            <p>
+                For candidates without previous salon background, our academy hosts comprehensive foundation courses. The program balances rigorous ergonomic scissor drills and live model workshops under the direct mentorship of capital masters with theoretical training in hair anatomy and client etiquette.
+            </p>
+
+            <!-- 
+                ASSIGNMENT COMMENT:
+                This career application form does not transfer data to an active web server
+                as backend database handling will be implemented later in the academic year.
+            -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Applicant Personal Information</legend>
+                    <p>
+                        <label for="job-name">Candidate Full Name:</label><br>
+                        <input type="text" id="job-name" name="job_name" placeholder="Daniyar Serikov" required>
+                    </p>
+                    <p>
+                        <label for="job-tel">Contact Telephone:</label><br>
+                        <input type="tel" id="job-tel" name="job_tel" placeholder="+7 (775) 987-65-43" required>
+                    </p>
+                    <p>
+                        <label for="job-email">Email Address:</label><br>
+                        <input type="email" id="job-email" name="job_email" placeholder="daniyar@example.kz" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Professional Track &amp; Availability</legend>
+                    <p>
+                        <label for="job-role">Target Position:</label><br>
+                        <select id="job-role" name="job_role" required>
+                            <option value="">-- Choose Career Track --</option>
+                            <option value="barber">Experienced Master Barber</option>
+                            <option value="student">Academy Student (Beginner)</option>
+                            <option value="administrator">Front Desk Administrator</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="job-start">Target Start Date:</label><br>
+                        <input type="date" id="job-start" name="job_start" required>
+                    </p>
+                    <p>
+                        <label for="job-exp">Years of Documented Experience:</label><br>
+                        <input type="number" id="job-exp" name="job_exp" min="0" max="25" value="0" required>
+                    </p>
+
+                    <p>Preferred Shift Schedule:</p>
+                    <p>
+                        <input type="radio" id="shift-full" name="work_shift" value="full" checked>
+                        <label for="shift-full">Full Time (2 on / 2 off)</label><br>
+                        <input type="radio" id="shift-part" name="work_shift" value="part">
+                        <label for="shift-part">Flexible Student Schedule</label><br>
+                        <input type="radio" id="shift-weekend" name="work_shift" value="weekend">
+                        <label for="shift-weekend">Weekend Floor Shifts</label>
+                    </p>
+
+                    <p>
+                        <label for="job-about">Professional Background &amp; Portfolio Links:</label><br>
+                        <textarea id="job-about" name="job_about" rows="4" cols="45" placeholder="Include links to work profiles or list completed training institutes..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="job-confirm" name="job_confirm" required>
+                        <label for="job-confirm">I confirm that all disclosed qualifications and dates are accurate</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Reset Application</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recruitment Team: <a href="mailto:hr@spirito.kz">hr@spirito.kz</a></p>
+        <p>&copy; 2026 Spirito Royal. Labor opportunities compliant with &sect; Kazakhstan Employment Code.</p>
+    </footer>
+</body>
+</html>
