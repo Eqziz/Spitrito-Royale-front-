@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Author: Nurassyl Ilyas -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical colophon detailing the architectural specifications, semantic standards, and validation process of the Spirito Royal website.">
+    <meta name="author" content="Nurassyl Ilyas">
+    <title>Colophon — Spirito Royal</title>
+</head>
+<body>
+    <header>
+        <h1>Spirito Royal Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services &amp; Pricing</a></li>
+                <li><a href="booking.html">Online Booking</a></li>
+                <li><a href="barbers.html">Barbers &amp; Branches</a></li>
+                <li><a href="feedback.html">Customer Feedback</a></li>
+                <li><a href="marketbar.html">MarketBar &amp; Care</a></li>
+                <li><a href="careers.html">Careers &amp; Academy</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Technical Colophon &amp; Build Documentation</h2>
+            <p>
+                This website was engineered as part of the collaborative laboratory coursework for <em>Introduction to Web Technologies</em>. The project models an informative portal for <abbr title="Spirito Royal Barbershop">SRB</abbr> located in Astana. The structural markup adheres strictly to semantic conventions published by the <abbr title="World Wide Web Consortium">W3C</abbr>.
+            </p>
+            <p>
+                <small>Notice: In compliance with assignment constraints, this build deliberately omits all CSS stylesheets, framework dependencies, and JavaScript execution routines, prioritizing clean DOM hierarchy.</small>
+            </p>
+
+            <h3>Justification for Generic Containers</h3>
+            <!-- 
+                JUSTIFICATION FOR DIV:
+                The div element is employed solely as a neutral diagnostic status box to encapsulate
+                system build metadata where semantic containers like section, article, or aside are conceptually invalid.
+            -->
+            <div class="system-validation-box">
+                <p>
+                    Engineered Validation Status: 
+                    <!-- 
+                        JUSTIFICATION FOR SPAN:
+                        The span element isolates an inline text snippet for future status highlighting
+                        without modifying the syntactic structure or semantic meaning of the sentence.
+                    -->
+                    <span class="status-indicator">W3C Markup Validated (0 errors)</span>.
+                </p>
+            </div>
+
+            <hr>
+
+            <h3>Terminal Instructions and Syntax Samples</h3>
+            <p>
+                The foundational document skeleton conforms to standard HTML5 declarations:
+            </p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document Title&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+            </pre>
+
+            <p>
+                To audit repository integrity prior to pushing commits, execute <code>git status</code> inside the shell.
+            </p>
+            <p>
+                To launch the built-in browser debugging console, press the shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>.
+            </p>
+            <p>
+                Expected diagnostic response from the build validation shell:
+                <samp>Build verification passed: 8 documents parsed, zero fatal errors detected.</samp>
+            </p>
+            <p>
+                Theoretical design parameters were referenced from the official <cite>HTML5 Living Standard</cite> specification.<br>
+                Core Architecture Lead: <strong>Nodir Muhammedov</strong>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Repository Lead Contact: <a href="mailto:lead-developer@example.kz">lead-developer@example.kz</a></p>
+        <p>&copy; 2026 Spirito Royal Engineering Team. &para; Specification Clause 4.3.</p>
+    </footer>
+</body>
+</html>
